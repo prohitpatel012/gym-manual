@@ -49,7 +49,7 @@ function LoginForm() {
   };
 
   return (
-    <div className="bg-white  rounded-xl shadow w-96 max-w-xl mx-auto">
+    <div className="bg-white  rounded-xl shadow w-96 max-w-xl mx-auto px-2">
       <h2 className="text-xl font-semibold mb-4 text-center py-8">
         Hey, Welcome back! Login to your account
       </h2>

@@ -26,7 +26,7 @@ function AdminHeader() {
     return (
         <>
             {/* Header Bar */}
-            <div className="bg-white border-b border-gray-100 px-6 py-4 flex items-center justify-between sticky top-0 z-40">
+            <div className="bg-white border-b border-gray-100 px-2 py-4 flex items-center justify-between sticky top-0 z-40">
                 <div className="flex items-center space-x-4">
                     <button
                         onClick={() => setOpen(true)}
@@ -34,7 +34,7 @@ function AdminHeader() {
                     >
                         <MenuIcon size={24} className="text-slate-600" />
                     </button>
-                    <h1 className="text-lg font-bold text-slate-800 uppercase tracking-tight">Admin Console</h1>
+
                 </div>
 
                 <div className="flex items-center space-x-4">
@@ -59,10 +59,12 @@ function AdminHeader() {
                     {/* Drawer Header */}
                     <div className="p-6 border-b border-gray-100 flex items-center justify-between">
                         <div className="flex items-center space-x-2">
-                            <div className="w-8 h-8 rounded bg-indigo-600 flex items-center justify-center text-white">
-                                <span className="font-bold underline text-xs">RP</span>
-                            </div>
-                            <span className="font-black text-slate-800 tracking-tighter">ADMIN</span>
+                            <Link href="/">
+                                <div className="w-8 h-8 rounded bg-indigo-600 flex items-center justify-center text-white">
+                                    <span className="font-bold underline text-xs">RP</span>
+                                </div>
+                                <span className="font-black text-slate-800 tracking-tighter">ADMIN</span>
+                            </Link>
                         </div>
                         <button
                             onClick={() => setOpen(false)}
